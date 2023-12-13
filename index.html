@@ -3,8 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <main class="main">
+      <section class="intro">
+        <nav class="intro__nav-wrapper">
+          <img src="./assets/logo.svg" alt="" class="nav-wrapper__logo" />
+          <img src="./assets/burger.svg" alt="" class="nav-wrapper__burger" />
+        </nav>
+        <h1 class="intro__title">Bienvenidxs a mi site</h1>
+        <img
+          class="intro__portrait"
+          src="https://s3-alpha-sig.figma.com/img/cb03/9cf0/02fd34c0de5fb2700dc1ff6ebdc61b41?Expires=1703462400&Signature=f7OsZiA8j5hx2ag1ZI0gxf~cEMVIxsTP8it6vLQnPQFWDbeIuZlARWURctdJWvVNFhVD6Jg4H~C~cxUbq9GW1fjj3DFoK~TG6IK5HqMP~o4wNGq4U9Jvno8~6V0MZoKs7YA2zpLzyyg7n2RwrcS6UsP7x707UTxMSir-~kkDOMcujRIAUnhQoN4BfdXCo8f5ZwE0dcQ7vx9xF2GvO8ALL7~V4U-4ybyw4xMhRdlPVV-9mAZUA~awK7e66y8luOeFgKQB0OvH98L~Jq2YCLNp~lBTH4B~DF--~zF05AaKh3TTl-JiTrQykjyBzha~utCTXoX~HGAAYEzyPjvqv-jSeQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          alt="Foto en primer plano de Marce"
+        />
+      </section>
+      <section class="soy-marce">
+        <h2 class="soy-marce__title">Soy Marce</h2>
+        <p class="soy-marce__text">
+          Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+          vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat
+          arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus.
+          Integer ut iaculis augue, sit amet tincidunt ex. In eleifend justo et
+          sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies
+          dolor.
+        </p>
+        <img src="./assets/check.svg" alt="" class="soy-marce__check" />
+      </section>
+      <section class="servicios">
+        <h2 class="servicios__title">Mis servicios</h2>
+        <article class="servicios__hago-cosas">
+          <img class="hago-cosas__img" src="./assets/pc.svg" alt="" />
+          <h3 class="hago-cosas__sub-title">Hago cosas</h3>
+          <p class="hago-cosas__text">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+            vehicula velit. Aenean lobortis posuere tristique.
+          </p>
+        </article>
+        <article class="servicios__hago-cosas">
+          <img class="hago-cosas__img" src="./assets/pc.svg" alt="" />
+          <h3 class="hago-cosas__sub-title">Y más cosas</h3>
+          <p class="hago-cosas__text">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+            vehicula velit. Aenean lobortis posuere tristique.
+          </p>
+        </article>
+        <article class="servicios__hago-cosas">
+          <img class="hago-cosas__img" src="./assets/pc.svg" alt="" />
+          <h3 class="hago-cosas__sub-title">Y también otras cosas</h3>
+          <p class="hago-cosas__text">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+            vehicula velit. Aenean lobortis posuere tristique.
+          </p>
+        </article>
+      </section>
+      <div class="escribime">
+        <h3 class="escribime__title">Escribime</h3>
+        <form action="" class="escribime__form-wrapper">
+          <div class="form-wrapper__form-item">
+            <label class="form-wrapper__label" for="nombre">NOMBRE</label>
+            <input class="form-wrapper__input" type="text" name="nombre" />
+          </div>
+          <div class="form-wrapper__form-item">
+            <label class="form-wrapper__label" for="email">EMAIL</label>
+            <input class="form-wrapper__input" type="text" name="email" />
+          </div>
+          <div class="form-wrapper__form-item">
+            <label class="form-wrapper__label" for="mensaje">Mensaje</label>
+            <textarea
+              class="form-wrapper__text-box"
+              name="mensaje"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button class="escribime__btn" type="submit">Enviar</button>
+        </form>
+      </div>
+      <footer class="footer">
+        <aside class="footer__trademark-wrapper">
+          <img
+            src="./assets/logo.svg"
+            alt="Logo de Marce"
+            class="trademark-wrapper__logo"
+          />
+          <p class="trademark-wrapper__text">© 2021 Marce</p>
+        </aside>
+        <section class="footer__social-media">
+          <div class="social-media__wrapper">
+            <img src="./assets/ig.svg" alt="" class="logo" />
+            <p class="social-media">Instagram</p>
+          </div>
+          <div class="social-media__wrapper">
+            <img src="./assets/in.svg" alt="" class="logo" />
+            <p class="social-media">Linkedin</p>
+          </div>
+          <div class="social-media__wrapper">
+            <img src="./assets/gh.svg" alt="" class="logo" />
+            <p class="social-media">Github</p>
+          </div>
+        </section>
+      </footer>
+    </main>
+  </body>
 </html>
