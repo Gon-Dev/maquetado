@@ -19,10 +19,15 @@
   <body>
     <main class="main">
       <section class="intro">
-        <nav class="intro__nav-wrapper">
-          <img src="./assets/logo.svg" alt="" class="nav-wrapper__logo" />
-          <img src="./assets/burger.svg" alt="" class="nav-wrapper__burger" />
-        </nav>
+        <header class="intro__header">
+          <img src="./assets/logo.svg" alt="" class="header__logo" />
+          <img src="./assets/burger.svg" alt="" class="header__burger" />
+          <nav class="header__nav-wrapper">
+            <a class="nav-wrapper__link" href="">quien soy</a>
+            <a class="nav-wrapper__link" href="">servicios</a>
+            <a class="nav-wrapper__link" href="">escribime</a>
+          </nav>
+        </header>
         <h1 class="intro__title">Bienvenidxs a mi site</h1>
         <img
           class="intro__portrait"
@@ -45,33 +50,35 @@
       </section>
       <section class="servicios">
         <h2 class="servicios__title">Mis servicios</h2>
-        <article class="servicios__hago-cosas">
-          <img class="hago-cosas__img" src="./assets/pc.svg" alt="" />
-          <h3 class="hago-cosas__sub-title">Hago cosas</h3>
-          <p class="hago-cosas__text">
-            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-            vehicula velit. Aenean lobortis posuere tristique.
-          </p>
-        </article>
-        <article class="servicios__hago-cosas">
-          <img class="hago-cosas__img" src="./assets/pc.svg" alt="" />
-          <h3 class="hago-cosas__sub-title">Y más cosas</h3>
-          <p class="hago-cosas__text">
-            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-            vehicula velit. Aenean lobortis posuere tristique.
-          </p>
-        </article>
-        <article class="servicios__hago-cosas">
-          <img class="hago-cosas__img" src="./assets/pc.svg" alt="" />
-          <h3 class="hago-cosas__sub-title">Y también otras cosas</h3>
-          <p class="hago-cosas__text">
-            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-            vehicula velit. Aenean lobortis posuere tristique.
-          </p>
-        </article>
+        <div class="servicios__hago-cosas-wrapper">
+          <article class="hago-cosas-wrapper__hago-cosas">
+            <img class="hago-cosas__img" src="./assets/pc.svg" alt="" />
+            <h3 class="hago-cosas__sub-title">Hago cosas</h3>
+            <p class="hago-cosas__text">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+              vehicula velit. Aenean lobortis posuere tristique.
+            </p>
+          </article>
+          <article class="hago-cosas-wrapper__hago-cosas">
+            <img class="hago-cosas__img" src="./assets/pc.svg" alt="" />
+            <h3 class="hago-cosas__sub-title">Y más cosas</h3>
+            <p class="hago-cosas__text">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+              vehicula velit. Aenean lobortis posuere tristique.
+            </p>
+          </article>
+          <article class="hago-cosas-wrapper__hago-cosas">
+            <img class="hago-cosas__img" src="./assets/pc.svg" alt="" />
+            <h3 class="hago-cosas__sub-title">Y también otras cosas</h3>
+            <p class="hago-cosas__text">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+              vehicula velit. Aenean lobortis posuere tristique.
+            </p>
+          </article>
+        </div>
       </section>
       <div class="escribime">
         <h3 class="escribime__title">Escribime</h3>
