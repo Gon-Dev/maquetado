@@ -19,6 +19,22 @@ main {
 /*INTRO*/
 .intro {
   background-image: url("./assets/dots.svg");
+  align-items: center;
+}
+.intro__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro__title {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem; /* 100% */
+  letter-spacing: -0.0625rem;
 }
 @media (max-width: 650px) and (orientation: portrait) {
   .intro {
@@ -26,15 +42,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
     background-image: url("./assets/dots.svg");
   }
   .intro__header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem;
   }
   .header__nav-wrapper {
@@ -42,15 +52,13 @@ main {
   }
   .header__logo {
     margin-top: 0.5rem;
+    width: 3.375rem;
+    height: 3.125rem;
   }
   .intro__title {
+    width: 18.1875rem;
+    margin-bottom: 0 3rem;
     text-align: center;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 3rem; /* 100% */
-    letter-spacing: -0.0625rem;
-    margin: 0 3rem;
   }
   .intro__portrait {
     width: 19.875rem;
@@ -59,21 +67,16 @@ main {
 }
 @media (max-width: 1440px) and (orientation: landscape) {
   .intro {
+    width: 100%;
+    height: 100vh;
+    padding: 2.25rem 6.44rem 0rem 5rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    padding: 2.25rem 6.44rem 0rem 5rem;
   }
   .intro__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
     grid-area: 1 / 1 / 1 / 6;
   }
   .header__logo {
@@ -98,15 +101,7 @@ main {
     color: #000;
   }
   .intro__title {
-    width: 19.5625rem;
     grid-area: 2 / 1 / 6 / 2;
-    font-family: Open Sans;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 3rem; /* 100% */
-    letter-spacing: -0.0625rem;
-    margin-bottom: 5rem;
   }
   .intro__portrait {
     grid-area: 4 / 5 / 6 / 6;
@@ -119,29 +114,33 @@ main {
   background-color: #141414;
   color: #fafafa;
 }
+.soy-marce__title {
+  font-family: "Open Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.125rem;
+}
+.soy-marce__text {
+  font-style: normal;
+  font-weight: 400;
+}
 @media (max-width: 650px) and (orientation: portrait) {
   .soy-marce {
     height: 33.625rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 2rem;
+    gap: 1rem;
   }
   .soy-marce__title {
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.125rem;
     margin: 0;
   }
   .soy-marce__text {
-    width: 30.25rem;
-    height: 10.3125rem;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
+    width: 19.5rem;
     margin: 0;
     line-height: normal;
   }
@@ -166,19 +165,11 @@ main {
   }
   .soy-marce__title {
     grid-area: 3 / 7 / 4 / 10;
-    font-family: "Open Sans";
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.125rem;
   }
   .soy-marce__text {
-    width: 33.25rem;
+    width: 30rem;
     height: 10.3125rem;
     font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem;
     grid-area: 4 / 7 / 5 / 10;
     letter-spacing: 0.25px;
@@ -189,14 +180,28 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5rem 0rem;
 }
+.servicios__title {
+  font-family: "Open Sans";
+}
+.hago-cosas__img {
+  width: 8.625rem;
+  height: 8.625rem;
+}
+.hago-cosas__sub-title {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 @media (max-width: 650px) and (orientation: portrait) {
   .servicios {
     gap: 4rem;
-    padding: 5rem 0rem;
   }
   .servicios__title {
-    font-family: Open Sans;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -204,34 +209,33 @@ main {
     letter-spacing: -0.125rem;
     color: #2c2c2c;
   }
-  .servicios__hago-cosas {
+  .servicios__hago-cosas-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 70%;
     text-align: center;
+    gap: 6.5rem;
   }
-  .hago-cosas__img {
-    width: 8.625rem;
-    height: 8.625rem;
-  }
+
   .hago-cosas__sub-title {
     margin: 1rem auto 1rem auto;
-    font-family: Roboto;
-    font-size: 1.5rem;
+  }
+  .form-wrapper__label {
+    font-family: Roboto, sans-serif;
+    font-size: 0.8125rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
   }
 }
 @media (max-width: 1440px) and (orientation: landscape) {
   .servicios {
-    padding: 5rem 0rem;
+    height: 40rem;
   }
   .servicios__title {
     margin-bottom: 5rem;
-    font-family: Open Sans;
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
@@ -252,17 +256,6 @@ main {
     align-items: center;
     gap: 1rem;
   }
-  .hago-cosas__img {
-    width: 8.625rem;
-    height: 8.625rem;
-  }
-  .hago-cosas__sub-title {
-    font-family: Roboto;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
   .hago-cosas__text {
     text-align: center;
   }
@@ -278,10 +271,20 @@ main {
   display: flex;
   flex-direction: column;
 }
+.escribime__form-wrapper {
+  gap: 1.5rem;
+}
+.form-wrapper__form-item {
+  gap: 0.5rem;
+}
 .form-wrapper__text-box,
 .form-wrapper__input {
   border: none;
   border-radius: 5px;
+}
+.form-wrapper__input {
+  width: 100%;
+  height: 2.8125rem;
 }
 .escribime__btn {
   width: 100%;
@@ -306,29 +309,14 @@ main {
   .escribime__title {
     margin: 0rem 0rem 2.28rem 0rem;
     font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
     line-height: normal;
     letter-spacing: -0.125rem;
   }
-
   .escribime__form-wrapper {
     min-width: 100%;
-    gap: 1.5rem;
-  }
-  .form-wrapper__form-item {
-    gap: 0.5rem;
-  }
-  .form-wrapper__label {
-    font-family: Roboto, sans-serif;
-    font-size: 0.8125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
   }
   .form-wrapper__input {
     width: 100%;
-    height: 2.8125rem;
   }
 }
 @media (max-width: 1440px) and (orientation: landscape) {
@@ -341,29 +329,12 @@ main {
     gap: 4.81rem;
   }
   .escribime__title {
-    font-family: Open Sans;
     font-size: 3rem;
-    font-style: normal;
-    font-weight: 700;
     line-height: 3rem; /* 100% */
     letter-spacing: -0.0625rem;
   }
-  .escribime__form-wrapper {
-    gap: 1.5rem;
-  }
-  .form-wrapper__form-item {
-    gap: 0.5rem;
-  }
-  .form-wrapper__label {
-    font-family: Roboto;
-    font-size: 0.8125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
   .form-wrapper__input {
     width: 23.5rem;
-    height: 2.8125rem;
   }
 }
 /*FOOTER*/
@@ -384,24 +355,12 @@ main {
     height: 30.8125rem;
     padding: 3.31rem 0 0 1.19rem;
   }
-  .footer__trademark-wrapper {
-    font-family: Roboto;
-    font-size: 0.8125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
   .trademark-wrapper__logo {
     width: 4.8125rem;
     height: 4.4375rem;
     margin: 0 0 1.13rem 0;
   }
   .trademark-wrapper__text {
-    font-family: Roboto;
-    font-size: 0.8125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin: 0 0 5.31rem 0;
   }
   .footer__social-media {
@@ -409,11 +368,6 @@ main {
   }
   .social-media__wrapper {
     gap: 0.5rem;
-    font-family: Roboto;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
   }
 }
 @media (max-width: 1440px) and (orientation: landscape) {
