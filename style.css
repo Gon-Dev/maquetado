@@ -16,6 +16,10 @@ main {
   padding: 0;
   color: #2c2c2c;
 }
+
+a:hover {
+  cursor: pointer;
+}
 /*INTRO*/
 .intro {
   background-image: url("./assets/dots.svg");
@@ -298,6 +302,7 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  cursor: pointer;
 }
 @media (max-width: 650px) and (orientation: portrait) {
   .escribime {
@@ -348,6 +353,10 @@ main {
 .footer__social-media {
   display: flex;
   flex-direction: column;
+}
+.social-media {
+  text-decoration: none;
+  color: #000;
 }
 @media (max-width: 650px) and (orientation: portrait) {
   .footer {
